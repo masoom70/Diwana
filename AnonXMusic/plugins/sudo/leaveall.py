@@ -5,7 +5,7 @@ from pyrogram.errors import InviteRequestSent
 from AnonXMusic import app
 from AnonXMusic.misc import SUDOERS
 from AnonXMusic.utils.database import get_assistant, is_active_chat
-from config import LOG_GROUP_ID
+from config import LOGGER_ID as LOG_GROUP_ID
 
 @app.on_message(filters.command(["leaveall", f"leaveall@{app.username}"]) & SUDOERS)
 async def leave_all(client, message):
